@@ -1,0 +1,52 @@
+# ---------------------------------
+# 1. Python & System Junk
+# ---------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Mac OS junk
+.DS_Store
+
+# ---------------------------------
+# 2. Virtual Environments
+# ---------------------------------
+# Never commit your virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# ---------------------------------
+# 3. Project Data & Artifacts
+# ---------------------------------
+# Ignore the downloaded MNIST dataset (users should run the script to download it)
+data/
+
+# Ignore local log files if you create them
+*.log
+
+# ---------------------------------
+# 4. Models (The Heavy Files)
+# ---------------------------------
+# Standard practice is to ignore trained weights.
+# If you REALLY want to commit your small model, delete the lines below.
+models/
+*.pth
+*.pt
+
+# ---------------------------------
+# 5. IDE & Editor Settings
+# ---------------------------------
+# Ignore personal editor settings
+.vscode/
+.idea/
+
+# ---------------------------------
+# 6. Sensitive Information
+# ---------------------------------
+# Never commit environment variables or secrets
+.env
+secrets.json
